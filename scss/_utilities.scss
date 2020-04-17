@@ -1,0 +1,9 @@
+
+
+//----------------GENERACION DE COLORES DE FONDO
+
+@each $k, $v in $colors{
+    .bg-#{$k} {
+        background-color: $v;
+    }
+}

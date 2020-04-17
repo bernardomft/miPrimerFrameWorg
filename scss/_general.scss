@@ -12,5 +12,38 @@ body{
 @for $i from 1 through 6{
     h#{$i}{
         font-family: $header-font-family;
+        margin: 0px;
+    }
+}
+
+//-------------GENERACION DE MARGIN-------------------------
+
+@for $i from 0 through 5{
+    .m-#{$i}{
+        margin: $i*$margin-factor;
+    }
+}
+
+@each $k, $v in $directions{
+    @for $i from 0 to 5{
+        .m#{$k}-#{$i}{
+            margin-#{$v}:$i*$margin-factor;
+        }
+    }
+}
+
+//-------------GENERACION DE PADDING-------------------------
+
+@for $i from 0 through 5{
+    .p-#{$i}{
+        padding: $i*$padding-factor;
+    }
+}
+
+@each $k, $v in $directions{
+    @for $i from 0 to 5{
+        .p#{$k}-#{$i}{
+            padding-#{$v}:$i*$padding-factor;
+        }
     }
 }

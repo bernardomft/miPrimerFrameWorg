@@ -1,5 +1,6 @@
-@import "vendors/normalize.css";
+@import "vendors/reset.css";
 //Este import da probelmas. No encunetra bien vendors/normalice
 
 @import 'variables';
 @import '_general';
+@import '_utilities';

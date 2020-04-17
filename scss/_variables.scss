@@ -11,3 +11,37 @@ $base-font-family:'Muli', sans-serif;
 /// Tipo de letra de la cabecera
 /// @group Texto
 $header-font-family:'Dancing Script', cursive;
+
+/// Centrado de Texto
+/// @group Texto
+.text-center{
+    text-align: center;
+}
+
+//----------------------COLORES------------------
+
+/// Grupo de colores principales
+/// @group Colores
+$colors:(
+    "primary": #52C1FF,
+    "secondary": #4A86E8
+    );
+
+//--------------------MARGIN Y PADDING-----------
+
+/// Factor iniciales de margin 
+/// @group Margin&Padding
+$margin-factor: 1.5em;
+
+/// Factor iniciales de padding
+/// @group Margin&Padding
+$padding-factor: 1.5em;
+
+/// Direcciones a los que se aplica el margin y el padding
+/// @group Margin&Padding
+$directions:(
+    "t": "top",
+    "r": "right",
+    "b": "bottom",
+    "l": "left"
+    );
