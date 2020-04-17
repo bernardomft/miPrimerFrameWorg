@@ -20,6 +20,10 @@ $header-font-size:2.3em;
 /// @group Texto 
 $header-factor-reduction:0.3em;
 
+/// Tamaño de letra por defecto. Se aplicará a todo el body
+/// @group Texto
+$base-font-size:1.0em;
+
 /// Centrado de Texto
 /// @group Texto
 .text-center{
