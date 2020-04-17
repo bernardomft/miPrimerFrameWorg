@@ -13,34 +13,40 @@ body {
   margin: 0px;
 }
 
-h1 {
+.h1 {
   font-family: "Dancing Script", cursive;
   margin: 0px;
+  font-size: 2em;
 }
 
-h2 {
+.h2 {
   font-family: "Dancing Script", cursive;
   margin: 0px;
+  font-size: 1.7em;
 }
 
-h3 {
+.h3 {
   font-family: "Dancing Script", cursive;
   margin: 0px;
+  font-size: 1.4em;
 }
 
-h4 {
+.h4 {
   font-family: "Dancing Script", cursive;
   margin: 0px;
+  font-size: 1.1em;
 }
 
-h5 {
+.h5 {
   font-family: "Dancing Script", cursive;
   margin: 0px;
+  font-size: 0.8em;
 }
 
-h6 {
+.h6 {
   font-family: "Dancing Script", cursive;
   margin: 0px;
+  font-size: 0.5em;
 }
 
 .m-0 {

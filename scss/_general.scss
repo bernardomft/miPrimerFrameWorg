@@ -10,9 +10,12 @@ body{
 //Reglas para la cabecera
 
 @for $i from 1 through 6{
-    h#{$i}{
+    //header-size parte de la variable original header-font-size
+    $header-size:$header-font-size -$i*$header-factor-reduction;
+    .h#{$i}{
         font-family: $header-font-family;
         margin: 0px;
+        font-size:$header-size;
     }
 }
 

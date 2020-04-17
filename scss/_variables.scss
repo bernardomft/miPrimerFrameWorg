@@ -12,6 +12,14 @@ $base-font-family:'Muli', sans-serif;
 /// @group Texto
 $header-font-family:'Dancing Script', cursive;
 
+/// Tamaño de letra de la cabecera h1. Será el tamaño por defecto que se irá recogindo en funcion del factor de retuccion
+/// @group Texto
+$header-font-size:2.3em;
+
+/// Factor de reduccion de tamaño de texto para las cabeceras para las cabeceras
+/// @group Texto 
+$header-factor-reduction:0.3em;
+
 /// Centrado de Texto
 /// @group Texto
 .text-center{
