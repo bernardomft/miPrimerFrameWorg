@@ -56,4 +56,28 @@ $directions:(
     "r": "right",
     "b": "bottom",
     "l": "left"
-    );
+);
+
+/// Margin arriba y abajo de container y container-expanded
+/// @group Margin&Padding
+$margin-container:0;
+//--------------------LAYOUT-------------------
+
+/// Ancho del contenedor. Este contenedor estara centrado. Puede tener margin arriba y abajo
+/// @group Layout
+$container-width:95%;
+
+/// Numero de colummnas para mi layout
+/// @group Layout
+$num_elementos:12;
+
+/// Mapa con los distintos breakpoints
+/// @group layout
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px
+);
+   
+
+    
