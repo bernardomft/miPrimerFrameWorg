@@ -78,6 +78,43 @@ $breakpoints: (
   "md": 768px,
   "lg": 992px
 );
-   
+
+/// Direccion de flex por defecto
+/// @group Layout
+$flex-direction-value: row;
+
+/// flex-wrap por defecto
+/// @group Layout
+$flex-wrap-value: wrap;
+
+
+/// flex-grow value por defecto.
+/// @group Layout
+$flex-gwow-value: 0;
+
+/// flex-shrink value por defecto.
+/// @group Layout
+$flex-shrink-value: 0;
+
+/// Alineación horizontal de elementos
+/// @group layout
+$hor-center-values:(
+    "start": "flex-start",
+    "end": "flex-end",
+    "center": "center",
+    "between": "space-between",
+    "around": "space-around",
+    "evenly": "space-evenly"
+);
+
+
+/// Alineación vertical de elementos
+/// @group layout
+$ver-center-values:(
+    "start": "flex-start",
+    "end": "flex-end",
+    "center": "center",
+    "baseline": "baseline"
+);
 
     

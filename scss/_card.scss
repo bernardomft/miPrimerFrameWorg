@@ -1,0 +1,116 @@
+//--------------------VARIABLES----------------------   
+
+/// Ancho del border de la tarjeta
+/// @group Card 
+$card-border-width:0.5px;
+
+/// Estilo del border de la tarjeta
+/// @group Card 
+$card-border-style:'solid';
+
+/// Color del border de la tarjeta
+/// @group Card 
+$card-border-color:#000000;
+
+/// Radio del border de la tarjeta
+/// @group Card 
+$card-border-radius:0.5em;
+
+/// Margen superior de la tarjeta
+/// @group Card 
+$card-margin-top:0.5em;
+
+/// Margen inferior de la tarjeta
+/// @group Card 
+$card-margin-bottom:0.5em;
+
+/// Padding de la imagen de la tarjeta
+/// @group Card 
+$card-image-padding:2.5em;
+
+/// Altura de la barra de color
+/// @group Card 
+$card-bar-height:3px;
+
+/// Anchura de la barra de color
+/// @group Card 
+$card-bar-width:75%;
+
+/// color de la barra de color
+/// @group Card 
+$card-bar-color:#52C1FF;
+
+/// Margenes de el nombre
+/// @group Card 
+$card-name-margin-left:10px;
+$card-name-margin-right:10px;
+$card-name-margin-top:0.5em;
+$card-name-margin-bottom:0.5em;
+
+/// Tamaño de letra de el nombre
+/// @group Card 
+$card-name-font-size:1.2em;
+
+/// Margenes de la descripcion
+/// @group Card 
+$card-descrption-margin-top:0.5em;
+$card-descrption-margin-bottom:0.5em;
+
+/// Color de fondo de el boton.
+/// @group Card 
+$card-button-background-color:#4A86E8;
+.card{
+    border:$card-border-width #{$card-border-style} $card-border-color;
+    border-radius: $card-border-radius;
+    margin-top:$card-margin-top;
+    margin-bottom: $card-margin-bottom;
+    
+    *{
+     display: block;   
+     width: 100%;
+     margin: 0 auto;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        padding: $card-image-padding;
+    }
+    
+    .card-bar{
+        height: $card-bar-height;
+        width: $card-bar-width;
+        margin: 0 auto;
+        background-color:$card-bar-color ;
+    }
+
+    .card-name{
+        text-align: center;
+        margin-left: $card-name-margin-left;
+        margin-right: $card-name-margin-right;
+        font-size: $card-name-font-size;
+        margin-top: $card-name-margin-top;
+        margin-bottom:  $card-name-margin-bottom;
+    }
+
+    .card-descrption{
+        text-align: center;
+        margin-top:$card-descrption-margin-top;
+        margin-bottom: $card-descrption-margin-bottom;
+    }
+
+    a{
+        text-align: center;
+        background-color: $card-button-background-color ;
+        text-decoration: none;
+        border:0.5px solid #000000;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        font-size: 1.3em;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+}

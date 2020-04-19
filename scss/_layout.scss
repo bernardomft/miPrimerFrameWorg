@@ -15,8 +15,8 @@
     display: -ms-flexbox; /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: $flex-direction-value;
+    flex-wrap: $flex-wrap-value;
   }
 
 /// Función que devuelve la anchura correspondiente al elemento de la maquetación
@@ -30,7 +30,7 @@
 
   @for $i from 1 through $num_elementos {
     .row > .col-#{$i} {
-      flex: 0 0 #{anchura_col($i)}+ "%";
+      flex: $flex-gwow-value $flex-shrink-value #{anchura_col($i)}+ "%";
       max-width: #{anchura_col($i)}+ "%";
     }
   }
@@ -41,9 +41,23 @@
       //Bucle para generar las clases de las columnas responsivas
       @for $i from 1 through $num_elementos {
         .row > .col-#{$k+"-"+$i} {
-          flex: 0 0 #{anchura_col($i)}+ "%";
+          flex: $flex-gwow-value $flex-shrink-value  #{anchura_col($i)}+ "%";
           max-width: #{anchura_col($i)}+ "%";
         }
       }
     }
   }
+
+  //--------------Generacion de alineacion horizontal--------------
+  @each $k,$v in $hor-center-values{
+    .justify-#{$k}{
+      justify-content: #{$v}
+    }
+  }
+
+  @each $k,$v in $ver-center-values{
+    .aling-#{$k}{
+      align-items: #{$v}
+    }
+  }
+
