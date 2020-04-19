@@ -4,10 +4,10 @@ const sass = require('gulp-dart-scss');
 const pleeease = require('gulp-pleeease');
 const rename = require('gulp-rename');
 const sassdoc = require('sassdoc');
-/*const ssh = require('gulp-ssh');
+//const ssh = require('gulp-ssh');
 const processhtml = require('gulp-processhtml');
 const autoprefix = require('gulp-autoprefixer');
-*/
+
 
 
 function borrar(cb) {
@@ -37,7 +37,7 @@ function build_docs() {
     return src("./scss/*.scss")
    .pipe(sassdoc(doc_options));
 }
-/*
+
 function mover_img() {
     return src('./img/*')
     .pipe(dest('./dist/img'));
@@ -48,7 +48,7 @@ function mover_html() {
     .pipe(processhtml())
     .pipe(dest('./dist'));
 }
-
+/*
 function mover_js() {
     return src('./js/*')
     .pipe(dest('./dist/js'));
@@ -80,10 +80,10 @@ var gulpSSH = new ssh({
 exports.borrar = borrar;
 exports.build_css = build_css;
 exports.build_docs = build_docs;
-/*exports.subir_servidor = subir_servidor;
+///exports.subir_servidor = subir_servidor;
 exports.mover_img = mover_img;
 exports.mover_html = mover_html;
-exports.mover_js;
+/*exports.mover_js;
 exports.proceso = series(borrar,
                                        parallel(build_css,build_docs),
                                        parallel(mover_img,mover_html,mover_js,mover_fonts),
